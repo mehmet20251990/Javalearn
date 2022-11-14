@@ -13,14 +13,17 @@ public class C02_PassByValue {
     }
 
     private static double indir33(double fiyat) {
+
         return fiyat *=0.89;
     }
 
     private static double indir22(double fiyat) {
+
         return fiyat *=0.78;
     }
 
     private static double indir11(double fiyat) {
+
         return fiyat *=0.67;
     }
 }

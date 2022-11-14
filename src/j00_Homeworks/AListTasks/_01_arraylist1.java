@@ -20,6 +20,20 @@ public class _01_arraylist1 {
 
     public static void main(String[] args) {
 
+        ArrayList<String> List = new ArrayList<>(Arrays.asList("Orange","Kiwi","Peach","Banana","Orange"));
+        String s = "Orange";
 
+        System.out.println(getCount(List, s));
+
+    }
+
+    private static int getCount(ArrayList<String> list, String s) {
+        int count = 0;
+        for (String x : list) {
+            if (x.contains(s)) {
+                count++;
+            }
+        }
+        return count;
     }
 }

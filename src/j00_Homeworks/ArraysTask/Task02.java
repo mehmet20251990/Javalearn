@@ -10,7 +10,6 @@ public class Task02 {
 
         System.out.print("agam kaç elemanlı array istirsen : ");
         //int arrBoyut = sc.nextInt();
-
         int arr[] = new int[sc.nextInt()];//boyutu belirlenmiş boş int array
 
         for (int i = 0; i < arr.length; i++) {

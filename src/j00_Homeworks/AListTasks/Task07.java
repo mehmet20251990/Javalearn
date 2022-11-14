@@ -28,6 +28,5 @@ public class Task07 {
 
         System.out.println("listIsim = " + listIsim);//update sonrası ->
 
-
     }
 }

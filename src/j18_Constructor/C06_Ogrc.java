@@ -13,10 +13,14 @@ public class C06_Ogrc {//ogrc obj için kalıphane
         isim = isim;//pramtre isim yine parametre isme atandı inst. obj isim degeri değişmedi
         yas = yas;//pramtre yas yine parametre yas atandı inst. obj yas degeri değişmedi
 
-        //name=isim;//parametre isim değeri inst. obj name değerine atandı
-        //age=yas;//parametre yas değeri inst. obj age değerine atandı
+        name=isim;//parametre isim değeri inst. obj name değerine atandı
+        age=yas;//parametre yas değeri inst. obj age değerine atandı
+
+        // TRİCK-> this olmadan 3 değişkende aynı isimde olursa sadece cons içinde değişiklik yapar...
+
         System.out.println("cons'taki isim :"+isim);//poaramter isim değeri : Saliha H
         System.out.println("cons'taki isim :"+this.isim);//inst. obj isim değeri: Merwe Hanım
-        System.out.println("cons'taki name :"+name);//inst. obj name değeri :null
+        System.out.println("cons'taki name :"+name);//inst. obj name değeri : Saliha H
+        System.out.println("cons'taki age :"+age);//inst. obj age değeri : 21
     }
 }

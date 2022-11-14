@@ -20,9 +20,19 @@ public class _07_arraylist7 {
         ArrayList 2: 6,7,12,3,1
         return 6 ve 7 olmalı
      */
-
     public static void main(String[] args) {
+        ArrayList<Integer> list1 = new ArrayList<>(Arrays.asList(8,7,9,6,7));
+        ArrayList<Integer> list2 = new ArrayList<>(Arrays.asList(6,7,12,3));
 
-
+        System.out.println(common_values(list1, list2));
+    }
+    private static ArrayList common_values(ArrayList<Integer> list1, ArrayList<Integer> list2) {
+        ArrayList<Integer> result = new ArrayList<>();
+        for (int i = 0; i < list2.size(); i++) {
+            if (list1.contains(list2.get(i))) {
+                result.add(list2.get(i));
+            }
+        }
+       return result;
     }
 }

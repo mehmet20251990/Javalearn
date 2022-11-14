@@ -3,12 +3,11 @@ package j00_Homeworks.AListTasks;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
-
 public class Task01_Market {
     /* TASK :
      * Bir bakkalın 7 günlük tüm kazançlarını günlük olarak gösteren bir program yazınız.
      * Ayrıca bakkalın bu hafta ortalama kazandığı miktarı gösteren bir method yazınız.
-     * Ayrıca bakkalın hangi günler ortalamanın üstüne kazandığını gösteren bir method yazınız.
+     * Ayrıca bakkalın hangi günler ortalamanın üstünde kazandığını gösteren bir method yazınız.
      * Ayrıca bakkalın hangi günler ortalamanın altında kazandığını gösteren bir method yazınız.
      *
      * 1. Adım : Günleri içeren bir tane ArrayList oluşturun. (gunler)

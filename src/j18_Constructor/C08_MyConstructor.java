@@ -1,8 +1,8 @@
 package j18_Constructor;
 
 public class C08_MyConstructor {
-    int x=3;
-    int y=5;
+    int x=3; //4-7-3
+    int y=5; //3
 
     public C08_MyConstructor() {
         x+=1;//ins variable +1 update edildi

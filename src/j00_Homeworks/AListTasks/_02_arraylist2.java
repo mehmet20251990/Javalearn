@@ -18,6 +18,15 @@ public class _02_arraylist2 {
 
     public static void main(String[] args) {
 
+        ArrayList<Integer> listSayi = new ArrayList<>(Arrays.asList(1,2,3,4,5));
+        System.out.println(getSum(listSayi));
+    }
 
+    private static int getSum(ArrayList<Integer> listSayi) {
+        int toplam =0;
+        for (int x : listSayi){
+            toplam+=x;
+        }
+        return toplam;
     }
 }

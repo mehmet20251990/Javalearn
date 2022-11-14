@@ -14,7 +14,6 @@ public class Task11 {
 
         int toplamDolar = 0;
         int toplamSterlin = 0;
-
         String para[] = str.split(" ");
         System.out.println("para array : " + Arrays.toString(para));
 

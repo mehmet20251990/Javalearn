@@ -17,7 +17,7 @@ public class C01_Ogrtmn {
     bir obj static variable değeri değişirse tün obj variable değeri değişir
     static obj den bağımsızdır class'a bağımlı Class'ın malıdır.
 
-    Trick-> bir variable, methoda doğrudan calss name ile obj olmadan call etmek için static olmalıdır..
+    Trick-> bir variable, methoda doğrudan class name ile obj olmadan call etmek için static olmalıdır..
      */
 
     String isim;
@@ -25,8 +25,8 @@ public class C01_Ogrtmn {
     static String okul;
 
     public C01_Ogrtmn(String isim, int tecrube) {
-        this.isim = isim;
-        this.tecrube = tecrube;
+        this.isim = isim; // cüneyt - bekir - nazım
+        this.tecrube = tecrube; // 11 - 7 - 13
     }
 
     public static void maasHesapla(){

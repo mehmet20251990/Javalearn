@@ -7,7 +7,6 @@ import java.util.List;
 public class Task05 {
     public static void main(String[] args) {
 
-
          /*TASK :
         2 Boyutlu bir Multidimensional array i input kabul edip, arraydeki tüm elemanları bir
         listeye kopyalayan ve harf sırasına göre yazdıran bir METHOD yazınız.
@@ -17,9 +16,7 @@ public class Task05 {
         String isimArr[][] = {{"Ali", "Veli", "Ayse"}, {"Hasan", "Can"}, {"Suzan"}};
         yeniList(isimArr);//[Ali, Ayse, Can, Hasan, Suzan, Veli]
 
-
     }//main sonu
-
     public static List<String> yeniList(String[][] isimArr) {
         List<String> isimList = new ArrayList<>();//boş list
 
@@ -34,5 +31,4 @@ public class Task05 {
         System.out.println("isimList = " + isimList);//sıralama sonrası ->[Ali, Ayse, Can, Hasan, Suzan, Veli]
     return isimList;
     }
-
 }

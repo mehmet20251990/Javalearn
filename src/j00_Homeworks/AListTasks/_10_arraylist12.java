@@ -2,6 +2,7 @@ package j00_Homeworks.AListTasks;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 
 public class _10_arraylist12 {
 
@@ -23,6 +24,23 @@ public class _10_arraylist12 {
 
     public static void main(String[] args) {
 
+        ArrayList<Integer> listSayi = new ArrayList<>(Arrays.asList(1 , 5 , 22, 10 ,20 ,14 , 8 , 25 , 30, 28));
+        int min= 20;
+        int max= 30;
+        Collections.sort(listSayi);
 
+        System.out.println(rangeBtw(listSayi, min, max));
     }
-}
+
+    private static int rangeBtw(ArrayList<Integer> listSayi, int min, int max) {
+        int count= 0;
+        for (int x: listSayi) {
+          if (x>=20 && x<=30) {
+              count++;
+          }
+        }
+
+        return count;
+    }
+    }
+

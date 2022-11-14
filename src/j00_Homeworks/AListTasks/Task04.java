@@ -25,7 +25,6 @@ public class Task04 {
         System.out.println("aOlmayanlistIsim = " + aOlmayanlistIsim);
 
         listIsim.clear();//list ısım boşlatılıdı
-
         listIsim.addAll(aOlmayanlistIsim);
         System.out.println("listIsim = " + listIsim);//listIsim = [Veli, Omer]
 

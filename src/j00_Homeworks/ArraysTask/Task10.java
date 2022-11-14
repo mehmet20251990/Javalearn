@@ -15,7 +15,6 @@ public class Task10 {
 
         syınınTersi(arr);
     }
-
     private static void syınınTersi(int[] arr) {
 
         for (int a:arr){

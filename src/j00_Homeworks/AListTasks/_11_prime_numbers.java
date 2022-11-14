@@ -1,5 +1,9 @@
 package j00_Homeworks.AListTasks;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
 public class _11_prime_numbers {
 
     /*
@@ -14,8 +18,24 @@ public class _11_prime_numbers {
         Output(Çıktı): 4
         Explanation(Açıklama): 10'dan küçük 4 adet asal sayı vardır. (2,3,5,7)
      */
-
     public static void main(String[] args) {
-
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Negatif olmayan bir sayı giriniz");
+        int num=sc.nextInt();
+        List<Integer> asalList=new ArrayList<>();
+        int count=0;
+        for (int i = 2; i <num ; i++) {
+            if (i!=2 && i!=3 && i!=5 && i!=7){
+                if(i%2!=0 && i%3!=0 && i%5!=0 && i%7!=0){
+                    asalList.add(i);
+                    count++;
+                }
+            }else {
+                asalList.add(i);
+                count++;
+            }
+        }
+        System.out.println("count = " + count);
+        System.out.println("asalList = " + asalList);
     }
 }

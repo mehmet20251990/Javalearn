@@ -1,6 +1,8 @@
 package j00_Homeworks.AListTasks;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class _09_2dArray_with_arraylis {
 
@@ -19,7 +21,14 @@ public class _09_2dArray_with_arraylis {
      */
 
     public static void main(String[] args) {
-
-
+        int num[][]={{1,2,3},{4,5,6},{7,8,9}};
+        ArrayList<Integer> list2 = new ArrayList<>();
+        for (int i=0; i< num.length; i++){
+            for (int j = 0; j < num[i].length; j++){
+                list2.add(num[i][j]);
+            }
+        }
+        System.out.println(list2);
     }
+
 }

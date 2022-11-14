@@ -14,9 +14,19 @@ public class Task14 {
          */
         String str = "ade1r4d3";
 
+            String strNew = str.replaceAll("\\D", "");
+            String arr[] = strNew.split("");
+            int toplam = 0;
+            int a[] = new int[arr.length];
+            for (int i = 0; i <= a.length - 1; i++) {
+                a[i] = Integer.valueOf(arr[i]);
+                toplam += a[i];
+            }
+
+        }
 
     }
 
 
-}
+
 

@@ -20,12 +20,13 @@ public class Task01 {
         }
         System.out.println("agam istedgin array : " + Arrays.toString(arr));
 
+       Arrays.sort(arr);//arr k->b sortingen yapıldı...
+        System.out.println("agam array : " + Arrays.toString(arr));
 
-
-        Arrays.sort(arr);//arr k->b sortingen yapıldı..
-        for (int i = arr.length-1 /*-> en buyuk sondaki elemandan döngü başlar*/ ;i>=0; i--) {
+       for (int i = arr.length-1 /*-> en buyuk sondaki elemandan döngü başlar*/ ;i>=0; i--) {
             System.out.print(arr[i] + " ");
         }
+
 
     }
 }

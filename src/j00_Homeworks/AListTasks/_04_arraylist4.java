@@ -2,6 +2,7 @@ package j00_Homeworks.AListTasks;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 
 public class _04_arraylist4 {
 
@@ -21,7 +22,14 @@ public class _04_arraylist4 {
      */
 
     public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>(Arrays.asList("yellow", "red", "blue", "red", "blue"));
+        String s1 = "blue";
+        String s2 = "yellow";
 
-
+        System.out.println(changeInArraylist(list, s1, s2));
+    }
+    private static ArrayList changeInArraylist(ArrayList<String> list, String s1, String s2) {
+        Collections.replaceAll(list, s1, s2);
+        return list;
     }
 }

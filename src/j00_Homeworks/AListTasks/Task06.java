@@ -9,7 +9,6 @@ public class Task06 {
         Kullanıcıdan alacağınız 6 elemanlı bir dizinin
         sadece tek elemanlarını ayrı diziye bir metodda atayarak
          yazdırınız.
-
         */
 
         int sayiArr[]=new int[6];
@@ -20,7 +19,6 @@ public class Task06 {
         }
         System.out.println("tekElemanlar(sayiArr) = " + tekElemanlar(sayiArr));
     }//main sonu
-
     private static ArrayList<Integer> tekElemanlar(int[] sayiArr) {
 
         ArrayList<Integer> tekSayilar = new ArrayList<>();//tek sayıları atanacagı boş list
@@ -29,7 +27,6 @@ public class Task06 {
               tekSayilar.add(sayiArr[i]);//tek olma şartı sağlayan array elemanı liste atandı
             }
         }
-
     return tekSayilar;
     }
 }

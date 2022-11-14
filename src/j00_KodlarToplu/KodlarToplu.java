@@ -156,6 +156,7 @@ public class KodlarToplu {
         int arr4[]= new int[12];
 
         Arrays.sort(arr);// array elemanları sıralandı
+
         System.out.println(Arrays.toString(arr)); // [7,16,17,20,24,34,43,54,55,63,67,97]
         System.out.println(Arrays.binarySearch(arr, 34));// 5 -> elemanı arrayda arayıp index return eder
         System.out.println(Arrays.binarySearch(arr, 21));//-5
@@ -249,7 +250,7 @@ public class KodlarToplu {
         // System.out.println(listSehir.remove(11)); // indexi olmadığı için RTE verir
         System.out.println(listSehir.remove("Amerigonya")); // false - olmadığı için silemedi
         System.out.println(listSehir.remove("Londra")); //true- silindi. tekrarlı eleman varsa ilki silinir diğerlerine dokunulmaz.
-        System.out.println(listSehir.remove(1)); // losAngeles - sildiği elemanı verir
+        System.out.println(listSehir.remove(1)); // losAngeles - indexteki sildiği elemanı verir
         listSehir.addAll(listUlke);//sehirList'e ulkeList eklendi
         listSehir.removeAll(listUlke);//sehirList'tten ulkeList çıkarıldı
         //replaceAll();-> listte belirli bir elemanı belirli bir değer ile update eder.
@@ -263,7 +264,7 @@ public class KodlarToplu {
         // Trıck-> Object class java'da tüm class'ların parent(atası:HZ ADEM)
         Object arrUlkeler []=listUlke.toArray();//Object-> Hz.Adem Class'ına atandı
 
-        // King of TRICK -> Array'dan çevirilen List aray kaynaklı oduğu için array davraınışı
+        // King of TRICK -> Array'dan çevirilen List array kaynaklı oduğu için array davraınışı
         // gösterir boyut sabittir dolayısıyle remove add method çalışmaz.
         String arrJavaCan[]={"Akif","Gamze","Musty","SevdeNur"};
         List<String > listJavaTar= Arrays.asList(arrJavaCan);//arrJavaCan değerleri list elelman olarak atandı
@@ -273,6 +274,22 @@ public class KodlarToplu {
         ArrayList<String > listJavaTar1= new ArrayList<>(Arrays.asList(arrJavaCan));
         listJavaTar1.add("sefil haluk");
         System.out.println("listJavaTar1 = " + listJavaTar1);//[Akif, Gamze, Musty, SevdeNur, sefil haluk]
+
+                    // TEMEL BİLGİLER
+        //%10d -> 10 hanelik yer ayir, kapasite
+        //%-20.10S -> sola yaslayarak 20 birimlik kapasite ver, String ifadenin buyuk harf ile 10 karakterini yazdir
+        //%-5.3f ->sola yaslayarak 5 birimlik kapasite ver, virgulden sonra 3 hane yazdir
+        //  \n ->new line yeni satira gec
+        // - : sola yaslamak
+        //%S -> buyuk harfle yazdir
+        // %s -> kucuk harfle yazdir
+        //%x.y -> x:kapasite y : karakter sayisi
+
+        // System.out.printf("sayi: %-10d, str: %-8.8s, db :%09.4f" , sayi,str,db);
+        // sayi: 753       , str: Bootcamp, db :0003,8956 (Başına 0 konduğunda boşlukları 0 ile doldurur)
+
+
+
 
 }
 }

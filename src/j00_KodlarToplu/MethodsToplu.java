@@ -107,7 +107,6 @@ public class MethodsToplu {
         } else {
             System.out.println("Array de yok");
         }
-
     }
 
     public static int topla3(int b, int a) {//int ve int parametreli inr return eden method
