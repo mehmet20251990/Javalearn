@@ -1,17 +1,28 @@
 package j32_Abstract.abstract01;
 
-public abstract class Honda {
+public abstract class Honda {//parent abstract class
 
-    String name= "Gülsüm T.Lead";
     public abstract void motor();
 
-    public abstract void koltuk();
+     void sunrooff(){
+         System.out.println("agam keyfini bilirsennn  ama subroof extra ücret :)");
+     }
+// abs  class'da variable tanımlanabilir mi -> evet
+    String name="Gülsüm team lead";
+     //variable'lar abstarct tanımlanır mı? -> kesinlikle hayır
+    //public  abstract  int yas=48;//-> o-la -mazzz
 
-    public abstract void kapı();
 
-    public void sunroof() {
-        System.out.println("Agam gökyüzü senindir");
-    }
-    // final void finalMethod(); //
+    abstract void koltuk();
+     abstract void kapı();
 
+    // final void finalMethod();//concerete method body'siz olamaz
+    // final abstract void finalMethod();//abs method final olamaz
+
+   //private void privateMethod();//concerete method body'siz olamaz
+   //private  abstract void privateMethod();//abs method private olamaz
+
+    //static void gunesMethod();//concerete method body'siz olamaz
+    //static abstract void gunesMethod();//abs method static olamaz
+    //Honda obj=new Honda();//melekler doğurmaz abs class obj uretmez...
 }

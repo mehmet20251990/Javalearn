@@ -1,18 +1,19 @@
 package j32_Abstract.abstract01;
 
-public class Crv extends Honda {
+public class Crv extends Honda{
+
     @Override
     public void motor() {
-
+        System.out.println("Agam 2.4 super turbo motor arazi seni bekler 4x4 :)");
     }
 
     @Override
-    public void koltuk() {
-
+    void koltuk() {
+        System.out.println("Agam deri koltuk arazıde daha temiz olur ");
     }
 
     @Override
-    public void kapı() {
-
+    void kapı() {
+        System.out.println("Agam kapılar vakumlu çarpılayasan :( ");
     }
 }
