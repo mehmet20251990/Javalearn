@@ -33,7 +33,6 @@ public class Kisi {
     }
 
     public int getYas() {
-
         return yas;
     }
 
