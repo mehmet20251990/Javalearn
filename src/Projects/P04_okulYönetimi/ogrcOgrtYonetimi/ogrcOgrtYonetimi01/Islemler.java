@@ -95,8 +95,8 @@ public class Islemler {
         boolean flag = true;//flag bayrak olsun true->bayrak havada false->bayrak yerde
 
         if (kisiTuru.equalsIgnoreCase("OGRENCI")){//ogrenci arıyorsa if body çalışacak
-            scan.nextLine();//dummy
-            System.out.println();//bos satır print
+        //    scan.nextLine();//dummy
+        //    System.out.println();//bos satır print
             System.out.print("silinecek ogrenci kimlik no giriniz : ");
 
             String silinecekKimlikNo=scan.next();
@@ -150,8 +150,8 @@ public class Islemler {
         //AHAN Da  TRICK : flag iki farlı method'da da kullanıldıgı icin static yapmak daha clean code olur....
 
         if (kisiTuru.equalsIgnoreCase("OGRENCI")){//ogrenci arıyorsa if body çalışacak
-            scan.nextLine();//dummy
-            System.out.println();//bos satır print
+         //    scan.nextLine();//dummy
+         //    System.out.println();//bos satır print
             System.out.print("aradıgınız ogrenci kimlik no giriniz : ");
 
             String arananKimlikNo=scan.next();
@@ -185,7 +185,7 @@ public class Islemler {
     private static void ekle() {
         System.out.println(R+"   ***   " + kisiTuru + " ekleme sayfası   ***"+B);
         System.out.print("ad soyad giriniz : ");
-        scan.nextLine();//dummy hayalet komut
+        scan.nextLine();//dummy hayalet komut -> toplu sccanlerin başladığı yere koymak gerekir
         String adSoyad = scan.nextLine();
         System.out.print("kimlik No giriniz : ");
         String kimlikNo = scan.next();
@@ -195,7 +195,7 @@ public class Islemler {
 
             System.out.print("ogrenci No giriniz : ");
             String ogrcNo = scan.next();
-            scan.nextLine();//dummy --> hayalet komut--> iki tane eşit scan.next(); komutu ayırmak için araya girmeli
+        //    scan.nextLine();//dummy --> hayalet komut--> iki tane eşit scan.next(); komutu ayırmak için araya girmeli
             System.out.print("sınıf giriniz : ");
             String sınıf = scan.next();
             Ogrenci sefilOgrenci = new Ogrenci(adSoyad, kimlikNo, yas, ogrcNo, sınıf);//p'li cons ogrc obj create edildi

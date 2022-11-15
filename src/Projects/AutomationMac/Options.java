@@ -46,6 +46,7 @@ price;
 
             case 0:
                 System.out.println("Yine Bekleriz...");
+                System.exit(0);
                 break;
             case 1:
                 urun.setPrice(urun.getKraker());
@@ -94,5 +95,26 @@ price;
             }
         }
         return accountBalance; //Hata vermemesi için şu anlık yazılmıuş bir veridir....
+    }
+
+    public void purchase(double price, double accoutBalance, Urun urun) {
+
+        while (accoutBalance >= price) {
+
+            accoutBalance = accoutBalance - price;
+            System.out.println("Kalan Bakiye: " + accoutBalance);
+
+            Scanner scanner = new Scanner(System.in);
+            System.out.println("Başka bir ürün almak istiyor musunuz? (Y/N)");
+            char confirm = scanner.next().toLowerCase().charAt(0);
+
+            if (confirm == 'n') {
+                System.out.println("Yine Bekleriz....");
+                break;
+            } else {
+                urun.setPrice(select(urun));
+                accoutBalance = balance(urun.getPrice(), accoutBalance, urun);
+            }
+        }
     }
 }

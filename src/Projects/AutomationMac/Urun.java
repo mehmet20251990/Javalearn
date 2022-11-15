@@ -12,6 +12,10 @@ public class Urun {
     productNum;
     price;
      */
+
+    // private access modifier ile --> Encapsulation
+    // fetch --- read ---> get ile
+    // update ---> set ile
     private double kraker = 2.5;
     private double cips = 2.2;
     private double cocaCola = 2.2;
