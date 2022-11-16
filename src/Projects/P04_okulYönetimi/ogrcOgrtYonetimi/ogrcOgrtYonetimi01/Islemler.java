@@ -73,7 +73,6 @@ public class Islemler {
                 break;
             case 4:
                 sil();
-
                 islemMenusu();
                 break;
             case 0:
@@ -150,8 +149,8 @@ public class Islemler {
         //AHAN Da  TRICK : flag iki farlı method'da da kullanıldıgı icin static yapmak daha clean code olur....
 
         if (kisiTuru.equalsIgnoreCase("OGRENCI")){//ogrenci arıyorsa if body çalışacak
-         //    scan.nextLine();//dummy
-         //    System.out.println();//bos satır print
+          //   scan.nextLine();//dummy
+          //   System.out.println();//bos satır print
             System.out.print("aradıgınız ogrenci kimlik no giriniz : ");
 
             String arananKimlikNo=scan.next();

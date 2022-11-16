@@ -14,6 +14,7 @@ public class Runner {
         dgshn.sunroof();
         dgshn.yakıt();
 
+
         System.out.println("dısDonanım.RENK = " + dısDonanım.RENK);
         System.out.println("icDonanım.RENK = " + icDonanım.RENK);
         System.out.println("Lastik.RENK = " + Lastik.RENK);
@@ -22,6 +23,7 @@ public class Runner {
         System.out.println("icDonanım.KUMAS = " + icDonanım.KUMAS);
         System.out.println("icDonanım.MUSIC = " + icDonanım.MUSIC);
         dısDonanım.anten();//static conc meth Interface name .call
+        dısDonanım.aga(); ////static conc meth Interface name .call
 
     }
 }

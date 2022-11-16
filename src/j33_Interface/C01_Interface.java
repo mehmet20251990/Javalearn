@@ -6,15 +6,16 @@ public class C01_Interface {
 
     INTERFACE ASLA BİR CLASS DEGİLDİR. INTERFACE INTERFACE'dir.
 
-            1) Interface yapilarda concrete method asla creat! edilemez. sadece  abstract method'lar creat edilir.
+            1) Interface yapilarda concrete method asla create edilemez. sadece  abstract method'lar create edilir.
     TRICK :)
     JAVA 8’e kadar interface’de  “body’li concrete method” tanımlanamazdı. JAVA 8 ile bu özellik update edildi.
     Method access modifier public olduğu halde “default”  keyword method type olarak kullanılmaz ise CTE verir.
 
     TRICK :)
-    Concrete method’da “default”  keyword yerine “static” keyword de kullanılabilir ama hem “default” hem de “static” keyword  birlikte kullanılamaz…
-    Buradaki “static” keyword interface özel bir keyword’dur aynı package’deki başka class’dan class name ile method call edilemez.
-    Default veya static keyword’u ile tanımlanan method’lar concrete olduğu için override yapılması zorunlu değildir.
+    Concrete method’da “default”  keyword yerine “static” keyword de kullanılabilir ama hem “default” hem de “static” keyword
+    birlikte kullanılamaz… Buradaki “static” keyword interface özel bir keyword’dur aynı package’deki başka class’dan class
+    name ile method call edilemez. Default veya static keyword’u ile tanımlanan method’lar concrete olduğu için override
+    yapılması zorunlu değildir.
 
     TRICK :)  Concrete method’da “default method”  obje ile “static method”  method name ile call edilir
 
@@ -36,7 +37,7 @@ public class C01_Interface {
             5) Interface'lerdeki tum member'lar public oldugu icin  AccesModifier  yazilmasa da public ile ayni islemi yapar.
     public void ayna(); <-->  void ayna();  ---> ayni islemi yaparlar.
 
-    Trick :  normal class'larda AccMod yazilmazsa default olur.Ancak Interface'lerde AccMod yazilmazsa public olur
+    Trick :  normal class'larda AccMod yazilmazsa default olur. Ancak Interface'lerde AccMod yazilmazsa public olur
 
             6) Interface'ler kendi arasinda parent child (extends) iliskisi kurabilir.
     Interface'leri bir class'a parent yapmak icin "implements" keywordu kullanilir.
@@ -53,13 +54,13 @@ public class C01_Interface {
 
     b)Final veriable'ler initialize edilmezse CTE verir.
 
-            8)Interface'lerde veriable'lar mutlaka static'dir. Dolayisiyle obj creat etmeden interface ismi ile ulasilabilir.
+            8)Interface'lerde veriable'lar mutlaka static'dir. Dolayisiyle obj create etmeden interface ismi ile ulasilabilir.
 
             9)*****Interface'lerde tum member'lar public'tir.
     Dolayisiyle tum interface veriable'leri -->public+static+final (yazsa da yazmasa da )
 
     HANİMİS TRİCK :
-    Ayni isimli ve ayni data type'li variable'lar parent interface'lerde creat edip  object kullanarak call edilirse
+    Ayni isimli ve ayni data type'li variable'lar parent interface'lerde create edip  object kullanarak call edilirse
     Java hangisini sececegine karar veremez ve CTE verir. CTE almamak icin ayni isimli variable'lar kesinlikle "interface"
     isimleri kullanarak call edilmelidir.
 
@@ -69,8 +70,9 @@ public class C01_Interface {
     a)AccMod'den sonra "default" veya "static" keyword kullanilmali.ikisi br arada kullanılamaz
     b)Interface yapilarda concrete method icin kullanilan "default" keyword'u kesinlikle asla AccMod turunu vermez .
     c)Interface yapilarda concrete method child class tarafindan override edilmek zorunda degildir.
-    d)Interface yapilarda "default" olarak creat edilen concrete method child class'ı ancak obj ile call edilir.
-    e)Interface yapilarda "static" olarak creat edilen concrete method child class'ı ancak Datatype(interface name) ile  call edilir.
+    d)Interface yapilarda "default" olarak create edilen concrete method child class'ı ancak obj ile call edilir.
+    e)Interface yapilarda "static" olarak create edilen concrete method child class'ı ancak Datatype(interface name) ile
+    call edilir.
 
             11) Interface yapilarda istenirse main method tanımlanabilir ama bad practice
      */
