@@ -131,7 +131,6 @@ public class MethodsToplu {
     2.ClassName.methodName() şeklinde call edilir
     aynı class'taki method doğrudan methodname() ile call edilir.
      */
-
     public static void forloop (int a) {
         //for each loop, for loop un gelişmiş halidir.
         List<Integer> sayıList = new ArrayList<>(List.of(16, 5, 2, 33, 22, 27, 41, 24));

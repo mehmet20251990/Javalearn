@@ -1,33 +1,25 @@
 package j33_Interface.Task05;
-
 public class MakineMuhendisi implements IMuhendis {
-
     private boolean askerlik;
     private boolean adliSicil;
-
     public MakineMuhendisi(boolean askerlik, boolean adliSicil) {
         this.askerlik = askerlik;
         this.adliSicil = adliSicil;
     }
-
     @Override
     public void askerlik_durumu_sorgula() {
 
         if (askerlik) {
-
             System.out.println("Askerliğimi yaptım");
         } else {
             System.out.println("Askerliğimi yapmadım");
         }
-
     }
-
     @Override
     public String mezuniyet_ortalamasi(double derece) {
 
         return "Ortalamam: " + derece;
     }
-
     @Override
     public void adli_sicil_sorgulama() {
 
@@ -36,10 +28,7 @@ public class MakineMuhendisi implements IMuhendis {
         } else {
             System.out.println("Herhangi bir adli sicil kaydım bulunmuyor. ");
         }
-
-
     }
-
     @Override
     public void is_tecrubesi(String[] array) {
 
@@ -53,10 +42,7 @@ public class MakineMuhendisi implements IMuhendis {
                 System.out.println(s);
             }
         }
-
-
     }
-
     public void referansGetir(String[] array) {
 
         if (array.length == 0) {

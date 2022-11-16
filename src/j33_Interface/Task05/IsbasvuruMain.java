@@ -1,9 +1,6 @@
 package j33_Interface.Task05;
-
 public class IsbasvuruMain {
-
     public static void main(String[] args) {
-
 
         BilgisayarMuhendisi muhendisi1 = new BilgisayarMuhendisi(false, false);
 
@@ -29,7 +26,5 @@ public class IsbasvuruMain {
 
         IMuhendis muhendis3 = new BilgisayarMuhendisi(false, false);
         IMuhendis muhendis4 = new MakineMuhendisi(false, false);
-
-
     }
 }
