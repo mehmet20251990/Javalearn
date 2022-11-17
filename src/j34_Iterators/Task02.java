@@ -1,5 +1,9 @@
 package j34_Iterators;
 
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
 public class Task02 {
     public static void main(String[] args) {
  /*
@@ -10,6 +14,14 @@ public class Task02 {
 Orn : [2,13,56,23,45,14,40] istenen aralik 20 ile 40 arasi (sinirlar dahil)
 output: [23,40]
     */
-
+        List<Integer>list = new ArrayList<>(List.of(2,13,56,23,45,14,40));
+        Iterator<Integer> it = list.iterator();
+        while(it.hasNext()) {
+            int sayi=it.next();
+            if(sayi>=20 && sayi<=40) {
+                it.remove();
+            }
+        }
+        System.out.println(list);
     }
 }
