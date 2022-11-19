@@ -16,7 +16,7 @@
    * alindi yani negatif girme durumu kontrol edildi
    * brans try/catch ile yas a baglandi
    *
-   * sicil no harf ve rakamlardan olusmasi gerketigi icin ve        kontrol edildi
+   * sicil no harf ve rakamlardan olusmasi gerketigi icin ve kontrol edildi
    * nested try/catch mantigi ile ekleme methodu calisildi
    * girilen bilgilerin hepsi dogru oldugunda olusturulan listeye eklendi
    * arada cin seansi yapildi buyu enerji konulari LINK YOUTUBE da
