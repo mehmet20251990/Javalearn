@@ -8,11 +8,11 @@ import java.util.Queue;
 public class C01_Queue {
     public static void main(String[] args) {
          /*
-      Queue coll. interface oldg için child calss olan LinkedList ve PriorityQueue
+      Queue coll. interface oldugu için child class olan LinkedList ve PriorityQueue
       ile obj uretilir.
-      Eczane yemekhane vs belirli şart ile aksiyon alan elemanlar için kullanılır.
-      Cons seçimine göre queue obj özelliklieri belirlenir.
-      FİFO -> first in first out: Coll. ilk giren eleman ilk çıkar.Elemen en sona eklenişr enbaştan silinir
+      Eczane, yemekhane vs belirli şart ile aksiyon alan elemanlar için kullanılır.
+      Cons seçimine göre queue obj özellikleri belirlenir.
+      FİFO -> first in first out: Coll. ilk giren eleman ilk çıkar. Elemen en sona eklenir enbaştan silinir
        */
         Queue<String> q1 = new LinkedList<>(Arrays.asList("Cebrail", "Sümeyra", "Yakup", "Muharrem"));
         System.out.println("q1 = " + q1);// [Cebrail, Sümeyra, Yakup, Muharrem]->insertion order
@@ -21,7 +21,7 @@ public class C01_Queue {
 
         Queue<String> q2 = new PriorityQueue<>(Arrays.asList("javaCAN", "javaSU", "javaNAZ", "javİYE"));//[javaCAN, javaSU, javaNAZ, javİYE]
         System.out.println("q2 = " + q2);//[javaCAN, javaSU, javaNAZ, javİYE]
-        q2.add("javiDAN");
+        System.out.println(q2.add("javiDAN")); // Biz seçmezsek, Java sırayı kendisi belirler
         System.out.println("q2 = " + q2);//[javiDAN, javaCAN, javaNAZ, javİYE, javaSU]
 
         System.out.println("q1.element() = " + q1.element());// Cebrail
@@ -47,7 +47,7 @@ public class C01_Queue {
         System.out.println("q2.offer(\"küşleme\") = " + q2.offer("küşleme"));//true
 /*
 ahan da Trick kösesinde bugun : offer ve add farkı ->  eger queue coll. eleman kısıtlaması yapılmış ise
- add meth Exception fırlatır.offer ise true-false return eder.
+ add meth Exception fırlatır. offer ise true-false return eder.
 */
     }
 }

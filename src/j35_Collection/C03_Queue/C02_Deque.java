@@ -50,9 +50,9 @@ public class C02_Deque {
 
         System.out.println("dq2.pollLast() = " + dq2.pollLast());// null
 
-        System.out.println("dq2.removeFirst() = " + dq2.removeFirst());// .NoSuchElementException
+        System.out.println("dq2.removeFirst() = " + dq2.removeFirst());// NoSuchElementException
 
-        System.out.println("dq2.removeLast() = " + dq2.removeLast());//.NoSuchElementException
+        System.out.println("dq2.removeLast() = " + dq2.removeLast());// NoSuchElementException
         System.out.println("agam selametle app. run oldu. DEWAMKEEE...");
     }
 }
