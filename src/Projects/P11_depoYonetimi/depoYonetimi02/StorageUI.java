@@ -187,7 +187,7 @@ public class StorageUI {
     static void returnMenu() {
         System.out.println("1  MAIN MENU");
 
-        int select = scan.nextInt();
+        int select = scan.nextInt(); //String daha iyi olurdu ve yanlış seçim için try-catch yokkkkk
 
         // TODO catch inappropriate entry exception.
 

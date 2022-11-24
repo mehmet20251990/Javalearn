@@ -26,7 +26,7 @@ public class Islemler {
                 + "   ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯             ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯       " + B);
 
         System.out.print("ISLEM SECİNİZ : ");
-        int secim = scan.nextInt();
+        int secim = scan.nextInt();//String olsa daha iyiydi şimdi defaulta harf girerse diye try catch eklememiz lazımmmm
 
         switch (secim) {
             case 1:
@@ -37,10 +37,10 @@ public class Islemler {
                 miktarGuncelle();
                 girisPanel();
                 break;
-            case 3:
+            case 3: // raf güncelleme yokkkkkkkkkk
                 girisPanel();
                 break;
-            case 4:
+            case 4: // ürün çıkışı yokkkkkkkkk
                 girisPanel();
                 break;
             case 5:
@@ -52,6 +52,7 @@ public class Islemler {
                 break;
             default:
                 System.out.println("adam gibi değer gir gelmiyin oraya");
+                girisPanel(); // panel yoktuuuuuuuuu
                 break;
 
 
@@ -85,9 +86,10 @@ public class Islemler {
 
     private static void urunTanımla() {
         System.out.print("uruni smini giriniz : ");
+        scan.nextLine(); // burda olacakkkkkkk
         String urunIsim = scan.nextLine();
 
-        scan.nextLine();
+        // scan.nextLine(); // Yanlış yerdeeeeeeee
         System.out.print("uretici bilgisi giriniz : ");
         String uretici = scan.nextLine();
         // scan.nextLine();
@@ -97,6 +99,7 @@ public class Islemler {
         System.out.print("urun miktar giriniz : ");
         int miktar = scan.nextInt();
         scan.nextLine();
+
         System.out.print("urun icin raf  giriniz : ");
         String raf = scan.nextLine();
 
@@ -105,6 +108,4 @@ public class Islemler {
         System.out.println(id + " : " + urunler.get(id));
         id++;
     }
-
-
 }
