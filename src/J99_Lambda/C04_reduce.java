@@ -17,10 +17,14 @@ sonuç bir sonraki adıma girdi olarak sunulmaktadır. Bu sayede yığılmlı bi
 */
     public static void main(String[] args) {
 
-        List<Integer> sayi = new ArrayList<>(Arrays.asList(24, 38, 49, 33, 7, 3, 42, 66, 75, 45, 46, 55, 35, 25, 67, 16));
+        List<Integer> sayi = new ArrayList<>(Arrays.asList(1, 3, 5,4,6,12,8));
     //Lambda -> Stream API
         System.out.println("\n *****  ");
-        ciftKareMaxPrint(sayi);//Optional[4356]
+        ciftKareMaxPrint(sayi);//Optional[144]
+        elTopla(sayi);
+        ciftElCarpPrint(sayi);
+        minBul(sayi);
+        ydrtBykEkTkPrint(sayi);
     }
     // Task : List'in cift elemanlarin karelerinin en buyugunu print ediniz
     public static void ciftKareMaxPrint(List<Integer> sayi){
@@ -33,4 +37,50 @@ sonuç bir sonraki adıma girdi olarak sunulmaktadır. Bu sayede yığılmlı bi
         System.out.println(sayi.stream().filter(C01_LambdaExpression::ciftMi).map(t -> t * t).reduce(Math::max));
         // Direkt olarakta yazdırabiliriz...
     }
+
+    // Task : List'teki tum elemanlarin toplamini yazdiriniz.
+    public static void elTopla(List<Integer> sayi){
+        System.out.println(sayi.stream().reduce(Integer::sum));
+        Optional<Integer> toplam = sayi.stream().reduce(Integer::sum);
+        System.out.println(toplam);
+        System.out.println("Lambda exp.: "+sayi.stream().reduce(0,(a,b)->a+b));
+    /*
+        a : ilk değerini her zaman atanan identity değerden alır
+        b : değerini her zaman stream() akısdan alır.
+        a ilk değerden sonraki değerlerini action(işlem body)'den alır
+    */
+    }
+   // Task : List'teki cift elemanlarin carpimini  yazdiriniz.
+
+    public static void ciftElCarpPrint(List<Integer> sayi){
+
+        System.out.println(sayi.stream().filter(C01_LambdaExpression::ciftMi).reduce(Math::multiplyExact));
+
+        System.out.println(sayi.stream().filter(C01_LambdaExpression::ciftMi).reduce(1, (t, u) -> t * u));
+        //Başlangıç değeri belli olduğu zaman null alma ihtimali olmadığı için Optional değil normal değerini print eder.
+
+    }
+    // Task : List'teki elemanlardan en kucugunu 4 farklı yontem ile print ediniz.
+
+    public static void minBul(List<Integer> sayi){
+        System.out.println(sayi.stream().reduce(Math::min));
+        System.out.println(sayi.stream().reduce(Integer::min));
+        System.out.println(sayi.stream().reduce(C04_reduce::byhalukMinBul));
+        System.out.println(sayi.stream().reduce(Integer.MAX_VALUE, (t, u) -> t < u ? t : u));
+
+
+    }
+    public static int byhalukMinBul(int a, int b){
+        return a<b? a : b;
+    }
+
+    // Task : List'teki 24'ten buyuk en kucuk tek sayiyi print ediniz.
+    public static void ydrtBykEkTkPrint(List<Integer> sayi){
+        System.out.println(sayi.stream().filter(t -> t > 24 && t % 2 == 1).reduce(Integer::min));
+        // System.out.println(sayi.stream().filter(t -> t > 24 && C01_LambdaExpression::ciftMi)-> CTE : exp. ve meth
+        // ref aynı parametrede olamaz
+    }
+
+
+
 }
