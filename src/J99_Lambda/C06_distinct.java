@@ -6,11 +6,11 @@ import java.util.Comparator;
 import java.util.List;
 
 public class C06_distinct {
+
     public static void main(String[] args) {
 
         List<String> menu = new ArrayList<String>(Arrays.asList("küşleme","küşleme","küşleme","soğanlı","soğanlı","trileçe"
                 ,"bicibici","büryan","melemen","cacıx","kokoreç","yağlama","güveç","arabaşı","tantuni","et"));
-
         System.out.println(menu);
         System.out.println("     ******     ");
 
@@ -56,5 +56,4 @@ public class C06_distinct {
         menu.stream().map(String::length).filter(C01_LambdaExpression::ciftMi).map(t -> t*t)
                 .sorted(Comparator.reverseOrder()).distinct().forEach(t->System.out.print(t+" "));
     }
-
 }
