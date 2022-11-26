@@ -6,7 +6,6 @@ import java.util.Comparator;
 import java.util.List;
 
 public class C06_distinct {
-
     public static void main(String[] args) {
 
         List<String> menu = new ArrayList<String>(Arrays.asList("küşleme","küşleme","küşleme","soğanlı","soğanlı","trileçe"
@@ -23,7 +22,6 @@ public class C06_distinct {
         sonHrfTrsPrint(menu);
         System.out.println();
         chrSysCiftKrBkTksPrint(menu);
-
     }
     //distinct() => Bu method tekrarlı elemanları sadece bir kere akısa sokar.
     // Bu akışın farklı elemanlarından (Object.equals (Object) 'e göre) oluşan bir akış döndürür.
