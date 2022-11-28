@@ -53,5 +53,12 @@ public class C06_distinct {
     public static void chrSysCiftKrBkTksPrint(List<String>menu) {
         menu.stream().map(String::length).filter(C01_LambdaExpression::ciftMi).map(t -> t*t)
                 .sorted(Comparator.reverseOrder()).distinct().forEach(t->System.out.print(t+" "));
+
+        menu.stream().//akısa alndı
+                map(t -> t.length() * t.length()).//akısdaki string elemanları boyutlarının karesine update edildi
+                filter(C01_LambdaExpression::ciftMi).//cift elelmalar filtrelendi
+                distinct().//tekrarsız yapıldı
+                sorted(Comparator.reverseOrder()).//ters b->k sıra yapıldı
+                forEach(C01_LambdaExpression::yazdir);// print edildi
     }
 }
