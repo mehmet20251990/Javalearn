@@ -89,7 +89,6 @@ public class MethodsToplu {
         System.out.println(faktoriyel(sayı));
         int maas = topla3(5, 6);
 
-
         // Array elemanı varlığını kontrol etme...
         int arr[]= {67,97,20,63,43,34,54,24,16,7,55,17};
         int arr4[]= new int[12];
@@ -108,7 +107,6 @@ public class MethodsToplu {
             System.out.println("Array de yok");
         }
     }
-
     public static int topla3(int b, int a) {//int ve int parametreli inr return eden method
         return 2 * (a + b);
     }

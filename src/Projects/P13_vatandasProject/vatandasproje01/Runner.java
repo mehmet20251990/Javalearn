@@ -1,7 +1,6 @@
 package Projects.P13_vatandasProject.vatandasproje01;
 
 public class Runner {
-
     public static void main(String[] args) {
 
         Vatandas vatandas = new Vatandas();

@@ -287,6 +287,5 @@ public class KodlarToplu {
 
         // System.out.printf("sayi: %-10d, str: %-8.8s, db :%09.4f" , sayi,str,db);
         // sayi: 753       , str: Bootcamp, db :0003,8956 (Başına 0 konduğunda boşlukları 0 ile doldurur)
-
 }
 }

@@ -5,6 +5,7 @@ import java.util.Map;
 import java.util.Scanner;
 
 public class TaskProject {
+
     static HashMap<String, String> person = new HashMap<>();
     static Scanner sc = new Scanner(System.in);
     /*
@@ -130,31 +131,24 @@ public class TaskProject {
     public String getIsim() {
         return isim;
     }
-
     public void setIsim(String isim) {
         this.isim = isim;
     }
-
     public static int getKimlikNo() {
         return kimlikNo;
     }
-
     public static void setKimlikNo(int kimlikNo) {
         TaskProject.kimlikNo = kimlikNo;
     }
-
     public String getAdres() {
         return adres;
     }
-
     public void setAdres(String adres) {
         this.adres = adres;
     }
-
     public String getTelNo() {
         return telNo;
     }
-
     public void setTelNo(String telNo) {
         this.telNo = telNo;
     }
@@ -167,7 +161,6 @@ public class TaskProject {
     }
     public static String hane4olsun(){
         String a;
-
         while (true){
             a= sc.nextLine();
             if(a.length()!=4){

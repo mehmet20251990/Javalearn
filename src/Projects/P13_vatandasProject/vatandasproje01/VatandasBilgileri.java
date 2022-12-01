@@ -17,23 +17,18 @@ public class VatandasBilgileri {
     public String getIsimSoyisim() {
         return isimSoyisim;
     }
-
     public void setIsimSoyisim(String isimSoyisim) {
         this.isimSoyisim = isimSoyisim;
     }
-
     public String getAdres() {
         return adres;
     }
-
     public void setAdres(String adres) {
         this.adres = adres;
     }
-
     public String getTelefon() {
         return telefon;
     }
-
     public void setTelefon(String telefon) {
         this.telefon = telefon;
     }

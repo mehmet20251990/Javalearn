@@ -21,7 +21,6 @@ package Projects.P13_vatandasProject.vatandasproje02;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
-
 public class Vatandas {
     Map<Integer, VatandasBilgileri> vatandaslar = new HashMap<>();
     Scanner scan = new Scanner(System.in);

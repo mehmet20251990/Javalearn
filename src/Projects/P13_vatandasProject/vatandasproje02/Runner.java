@@ -5,5 +5,6 @@ public class Runner {
 
     Vatandas bilgi = new Vatandas();
     bilgi.selectOption();
+
     }
 }

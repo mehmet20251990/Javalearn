@@ -26,7 +26,6 @@ public class Vatandas {
 		 selectOption() method olusturun:
 		 1)Yukaridaki 3 methodu programi sonlandirana kadar secme hakki verin
 		*/
-
     /*
     saveInfo() method olusturun:
      1)Kullanicidan bir kimlik numarasi(4 haneli), isim, adres ve telefon alin.
@@ -106,7 +105,6 @@ public class Vatandas {
                     }
                 }
             }
-
         } while (true);
         if (count == 3) {
             cikis();
