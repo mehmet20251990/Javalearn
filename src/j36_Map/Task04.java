@@ -36,12 +36,28 @@ public class Task04 {
         HashMap<String, Integer> map = new HashMap<>();
         ArrayList<String> parcalanan = new ArrayList<>(Arrays.asList(cümle.split(" ")));
         System.out.println(parcalanan);
-        int tekrarsıysı = 1;
         for (String w : parcalanan) {
             if (!map.containsKey(w)) {
-                map.put(w, tekrarsıysı);
-            } else if ((map.containsKey(w))) map.put(w, tekrarsıysı++);
+                map.put(w, 1);
+            } else if ((map.containsKey(w))) map.put(w, map.get(w) + 1);
         }
         System.out.println(map);
+
+       /* 2. Methad
+        String str = "Ali ata bak. Veli ata bak. Veli ata Ali ile bak ulan.";
+        HashMap<String, Integer> kelimeMap = new HashMap<>();
+        ArrayList<String> CumleList = new ArrayList<>(Arrays.asList(str.split("\\.")));
+        System.out.println(CumleList);
+        for(int i = 0; i<CumleList.size();i++) {
+            ArrayList<String> KelimeList = new ArrayList<>(Arrays.asList((CumleList.get(i).trim()).split(" ")));
+            for (int j = 0; j < KelimeList.size(); j++) {
+                if (kelimeMap.containsKey(KelimeList.get(j)))
+                    kelimeMap.replace(KelimeList.get(j), kelimeMap.get(KelimeList.get(j)) + 1);
+                else kelimeMap.put(KelimeList.get(j), 1);
+
+            }
+        }
+        System.out.println(kelimeMap);
+        */
     }
 }

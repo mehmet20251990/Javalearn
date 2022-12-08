@@ -18,9 +18,7 @@ public class C03_get {
         System.out.println("hm.get(\"Ebay\") = " + hm.get("Ebay"));// 234 Euro
         System.out.println("hm.get(\"Sefiller\") = " + hm.get("Sefiller"));// Null
         System.out.println("hm.get(12)= "+hm.get(12));//Null: key data type farketmeksizin olmayan keyi null return eder
-
-
-
+        System.out.println("hm.get(\"296 Euro\") = " + hm.get("296 Euro")); //null
 
 
     }
