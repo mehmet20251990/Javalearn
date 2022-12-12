@@ -1,5 +1,8 @@
 package j00_KodlarToplu;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -134,6 +137,13 @@ public class MethodsToplu {
         List<Integer> sayıList = new ArrayList<>(List.of(16, 5, 2, 33, 22, 27, 41, 24));
         for (int top : sayıList) {
             System.out.println(top);
+        }
+    }
+    public static void DosyaOkumaEkleme() throws IOException {
+        FileInputStream fis=new FileInputStream("src\\j29_Exceptions\\ebikGabık");
+        int k;
+        while ((k = fis.read())!= -1) {
+            System.out.print((char)k); // k int ASCİİ olan file değeri char içi casting -> type dönüşümü
         }
     }
 }

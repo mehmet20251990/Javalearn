@@ -1,15 +1,18 @@
 package j36_Map;
 
-import java.util.Map;
-import java.util.Scanner;
-import java.util.TreeMap;
+import java.util.*;
 
 public class Task05 {
     //Task->   TreeMap Kullanarak Bir cumlenin içindeki harflerin frekansını(adetini) hesaplayıp print  code create ediniz
     public static void main(String[] args) {
+
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter your sentence...");
         String sentence = scan.nextLine();
+
+        List<String> hrftkr = new ArrayList<>(Arrays.asList(sentence.split("")));
+        hrftkr.removeAll(Collections.singleton(" "));
+        hrftkr.removeAll(Collections.singleton("."));
 
         Map<Character, Integer> frekans = new TreeMap<>();
 
@@ -22,16 +25,16 @@ public class Task05 {
             } else {
                 frekans.put(c, 1);
             }
-
         }
-
         for (Map.Entry<Character, Integer> entry : frekans.entrySet()) {
             System.out.println("Karakter " + entry.getKey() + " " + entry.getValue() + " kadar var...");
         }
 
-
     }
-
-
 }
+
+
+
+
+
 

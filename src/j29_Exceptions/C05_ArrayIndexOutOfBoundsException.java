@@ -9,7 +9,6 @@ public class C05_ArrayIndexOutOfBoundsException {
         System.out.println(arr[0]); // 24
 
        // System.out.println(arr[7]); // ArrayIndexOutOfBoundsException
-
         try {
             System.out.println(arr[7]);
             System.out.println("agam try block da bu yazıyı okuduysan excp fırlatmadı komut sorunsuz ");

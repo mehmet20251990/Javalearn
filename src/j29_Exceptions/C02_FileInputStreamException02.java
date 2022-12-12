@@ -6,6 +6,7 @@ import java.io.IOException;
 
 public class C02_FileInputStreamException02 {
     public static void main(String[] args) {
+
         try {
             FileInputStream fis=new FileInputStream("C:\\Users\\samet\\IdeaProjects\\javaLearn\\src\\j29_Exceptions\\ebikGabık");
             int k;

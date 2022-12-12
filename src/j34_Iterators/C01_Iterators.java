@@ -46,7 +46,7 @@ public class C01_Iterators {
             //          eleman önüne koyulur
             //next()-> list'in pointer önündeki  elemnını return eder
             System.out.print(it1.next() + " ");//Nur :-)  Gamze :-)  Erol :-)  Bekir :-)
-
+        }
             System.out.println();
             System.out.println("   *** Iterators ***   ");
             List<String> l2 = new ArrayList<>(Arrays.asList("Baran", "Gülsüm", "Akif", "Nazım"));
@@ -55,7 +55,7 @@ public class C01_Iterators {
             Iterator<String> it2 = l2.iterator();
             while (it2.hasNext()) {//tekraradaki pointer önünde eleman varlığının kontrol eder
                 it2.next();//tekrardaki pointer öünüdeki elemanı verir
-                it2.remove();// next() ilen  gelen elemanı siler
+                it2.remove();// next() ile  gelen elemanı siler
             }
             System.out.println("iterator  remove sonrası l2 : " + l2);// []
 
@@ -83,7 +83,5 @@ public class C01_Iterators {
             }
             ebikGabık.add(l4.toString());// l4 eklendi
             System.out.println("Listiterator set ve add sonrası l3:"+l3);//[B***, G***, A***, N***, [Serhat, Yakup, Mustafa, Nazlı]]
-
         }
     }
-}

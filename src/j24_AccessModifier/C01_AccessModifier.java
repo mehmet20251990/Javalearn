@@ -3,9 +3,9 @@ package j24_AccessModifier;
 public class C01_AccessModifier {
         /*
      1) "private" class member'lar sadece icinde bulunduklari class'larda kullanilabilirler.
-     Diğer class'lardan "private" class memler'lari kullanamaz.
+     Diğer class'lardan "private" class membler'lari kullanamaz.
 
-         2) Diğer package'lerden   olusturulan object için class'i import edilmeli
+         2) Diğer package'lerden olusturulan object için class'i import edilmeli
 
          3) Diğer package'lerden default class memberlara erişilemez.
           "default" ile "package private" es anlamlidir.

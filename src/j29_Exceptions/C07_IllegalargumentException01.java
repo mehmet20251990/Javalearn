@@ -15,7 +15,7 @@ public class C07_IllegalargumentException01 {
         4- "throws" keyword meth ilk satırda sadece bir kez tanımlanır
            "throw" keyword istenildiği kadar meth body de tanımlanabilir
          */
-        // IllegalargumentException -> kullanılmasını istenmeyen değerlerde pr hata vermesi isteniyorsa bu excp fırlatılıer
+        // IllegalargumentException -> kullanılmasını istenmeyen değerlerde pr hata vermesi isteniyorsa buu excp. fırlatılır
         // ornek : yas datası için negatif değer girilidğinde pr kırılmadan run olması ama girile değer için excp fırlatması için kullanılır..
 
         Scanner sc = new Scanner(System.in);
@@ -23,13 +23,13 @@ public class C07_IllegalargumentException01 {
 
         int age = sc.nextInt();
 
-        // if (age<18){
-        //     System.out.println("yasınız : "+age+" ehliyet için uygun değil ");
-        //     throw new IllegalArgumentException();//throw komutu try-catch block olmadan da istenen method body'de tanımlanabilir.
-        // }
-        // else System.out.println("yasınız : "+age+" ehliyet için uygun");
-
-        try {
+    /*     if (age<18){
+            System.out.println("yasınız : "+age+" ehliyet için uygun değil ");
+            throw new IllegalArgumentException();//throw komutu try-catch block olmadan da istenen method body'de tanımlanabilir.
+         }
+         else System.out.println("yasınız : "+age+" ehliyet için uygun");
+    */
+      try {
             if (age < 18) {
                 throw new IllegalArgumentException();//throw keyword ile Excp obj olusturularak hata tanımlanır ve fırlatırlır
                 // böylece sartımıza uymayan  değer için de catch block'a düşürerek daha pratik code yazıldı

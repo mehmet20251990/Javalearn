@@ -40,5 +40,6 @@ public class C02_FileInputStreamException01 {
         while ((k = fis.read())!= -1) {
             System.out.print((char)k); // k int ASCİİ olan file değeri char içi casting -> type dönüşümü
         }
+        System.out.println("agaya selamlar");
     }
 }

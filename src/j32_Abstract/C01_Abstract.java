@@ -3,7 +3,7 @@ package j32_Abstract;
 public class C01_Abstract {
     /*
     1- Bazı durumlarda child classlar parent classdaki meth.ların genellikle bodylerini değiştirerek override ederler.
-    Bu gibi durumlarda parent classdaki meth.a body tanımlamak ram ve memory açısından gereksizdir.
+    Buu gibi durumlarda parent classdaki meth.a body tanımlamak ram ve memory açısından gereksizdir.
     Çözüm olarak Java parent classa bodysiz -> abstract(soyut) meth.lar tanımlamıştır.
 
     2- Parent classdaki abstract meth.lar app güvenliği açısından child classda override edilmek zorundadır.

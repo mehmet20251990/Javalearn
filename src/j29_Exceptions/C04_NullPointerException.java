@@ -2,7 +2,6 @@ package j29_Exceptions;
 
 public class C04_NullPointerException {
     public static void main(String[] args) {
-
         // NullPointerException -> null ataması yapılan bir String'de length() method run edildiğnde oluşan RTE exception
         String str = "";
         System.out.println("str.length() = " + str.length());//0

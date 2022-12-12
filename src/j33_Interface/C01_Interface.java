@@ -4,7 +4,7 @@ public class C01_Interface {
     /*
     INTERFACE....
 
-    INTERFACE ASLA BİR CLASS DEGİLDİR. INTERFACE INTERFACE'dir.
+    INTERFACE ASLA BİR CLASS DEGİLDİR. INTERFACE'dir.
 
             1) Interface yapilarda concrete method asla create edilemez. sadece  abstract method'lar create edilir.
     TRICK :)
@@ -66,7 +66,7 @@ public class C01_Interface {
 
             System.out.println(S1.RENK);-->CTE verir
 
-          10)Interface yapilarda istenirse abstract olmayan concrete method creat edilebilir.
+          10)Interface yapilarda istenirse abstract olmayan concrete method create edilebilir.
     a)AccMod'den sonra "default" veya "static" keyword kullanilmali.ikisi br arada kullanılamaz
     b)Interface yapilarda concrete method icin kullanilan "default" keyword'u kesinlikle asla AccMod turunu vermez .
     c)Interface yapilarda concrete method child class tarafindan override edilmek zorunda degildir.

@@ -28,8 +28,8 @@ public class C01_ArithmeticException {
 
             System.out.println(oran);
             System.out.println("agam try block'tan selamlar :) ");
-
         }
+
         catch (ArithmeticException falanFilan){//child exception parent exception(Exception ebikGabık)
             System.out.println("agam bolmede bolen 0 olamaz :( "+falanFilan.getMessage());/// by zero->Exception olustugunda sadece hata mesajı print etmek için getMesage() kullanılır
             falanFilan.printStackTrace();//olusan Exception tum detay bilgisi print etmek için kullanılır
@@ -38,8 +38,7 @@ public class C01_ArithmeticException {
         catch (ArrayIndexOutOfBoundsException arrayExc){
             System.out.println("Agam arrayda olmayan eleman istirsen :) ");
         }
-
-       catch (Exception ebikGabık) {//Exception Class tum exceptionların Hz Ademi parent class->bad practice
+        catch (Exception ebikGabık) {//Exception Class tum exceptionların Hz Ademi parent class->bad practice
             // hata yakalndıgında yapılacak aksiyonların oldugu block
 
             //Exception-> olusan hata Data type
@@ -47,6 +46,7 @@ public class C01_ArithmeticException {
             System.out.println("agam nişledingg 0 hiç böler mi :( ");
             System.out.println("agam usta catch block'tan selamlar :) ");
         }
+
         finally {//catch block'lardan sonra istenirse finally block kullanılabilir
             /*
             try - catch içinde yapılna işlemlerden sonra mutlaka çalışması gerekn block vatsa finally tanımlanır.

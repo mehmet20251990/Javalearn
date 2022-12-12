@@ -18,6 +18,7 @@ public class C02_Encapsulation { // POJO class
     public void isimDegis(String isim){ // setter
         this.name = isim;
     }
+
     @Override
     public String toString() {
         return "C02_Encapsulation{" +

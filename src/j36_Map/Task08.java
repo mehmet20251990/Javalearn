@@ -33,13 +33,11 @@ public class Task08 {
         hm.put(4, "Paris");
 
         Scanner sc = new Scanner(System.in);
-
         System.out.print("Agam sayi giresen : ");
         int sayi = sc.nextInt();
 
         System.out.print("Agam sehir giresen : ");
         String sehir = sc.next();
-
         System.out.println("update(hm, sayi, sehir) = " + update(hm, sayi, sehir));
 
     }//main sonu

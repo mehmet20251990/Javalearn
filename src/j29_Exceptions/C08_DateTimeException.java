@@ -7,7 +7,6 @@ public class C08_DateTimeException {
     public static void main(String[] args) {
 
         //LocalDate date = LocalDate.of(2022,11,33); // RTE
-
         try {
             LocalDate date = LocalDate.of(2022,11,33);
             System.out.println("agam try block da bu yazıyı okuduysan excp fırlatmadı komut sorunsuz ");
