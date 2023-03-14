@@ -1,10 +1,8 @@
 package EllyHoca.day01;
 
 public class Q01_Sout {
-
         /*
   Konsolda asagidaki ciktiyi yazdiriniz
-
         S
         U
         C
@@ -25,8 +23,6 @@ public class Q01_Sout {
         A
         Y
          */
-
-
         public static void main(String[] args) {
             System.out.println("S");
             System.out.println("U");

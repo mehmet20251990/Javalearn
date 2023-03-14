@@ -1,12 +1,10 @@
 package EllyHoca.day01;
 
 public class Q02_Println_vs_print {
-
       /*
   println() ve print() arasinda tek fark var;
   println satir atliyor,
   print ise imlecin ayni satirda kalmasini sagliyor.
-
     Konsolda
     *****println*****
     Welcome
@@ -25,11 +23,7 @@ public class Q02_Println_vs_print {
           System.out.println("*****print*****");
           System.out.print("Welcome to Java Class");
           System.out.println("fark bu sekilde gorulur");
-
       }
-
-
-
     /*
    konsolda
    1

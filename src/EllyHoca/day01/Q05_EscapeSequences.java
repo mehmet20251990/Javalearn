@@ -10,16 +10,12 @@ public class Q05_EscapeSequences {
 	 \: backslash
 	 /:front slash
 	 */
-
-
-
         // Soru-1 :   konsola  1 tab ilerde  "Hello ", "Students  \ //"        seklinde yazdiriniz
         // Soru-2 : Attention kelimesini her harfini ayri bir satira gelecek sekilde yazdiriniz.
         // Soru-3 : "Kaliteli" insan isiyle ugrasir
         //          'bos insan' kisiyle ugrasir    yazdiriniz
         // 2 satir sonra da satir basindan 2 tab ilerde de "bu sozu cok severim" yazdiriniz
         // Bunlari sadece 1 sout kullanarak yazdiriniz
-
     public static void main(String[] args) {
         // Soru-1 :   konsola  1 tab ilerde  "Hello ", "Students  \ //"        seklinde yazdiriniz
         System.out.println("\t\"Hello \",  \"Students\t\\  // \"");
@@ -31,9 +27,7 @@ public class Q05_EscapeSequences {
         //          'bos insan' kisiyle ugrasir    yazdiriniz
         // 2 satir sonra da satir basindan 2 tab ilerde de "bu sozu cok severim" yazdiriniz
         // Bunlari sadece 1 sout kullanarak yazdiriniz
-
         System.out.println("\"Kaliteli\" insan isiyle ugrasir\n\'bos insan\' kisiyle ugrasir\n\n\t\t\"bu sozu cok severim\"");
-
     }
 }
 

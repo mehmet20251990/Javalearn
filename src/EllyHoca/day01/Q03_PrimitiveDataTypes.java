@@ -1,7 +1,6 @@
 package EllyHoca.day01;
 
 public class Q03_PrimitiveDataTypes {
-
        /*
          * Primitive data type
                 byte: only takes whole numbers
@@ -18,16 +17,12 @@ public class Q03_PrimitiveDataTypes {
          * Range: double > float >long > int >short > byte
          * !!! soutv degeri ile yazdirma
          */
-
        //byte, short, integer,long, double, float veri tiplerinin max ve min degerlerini yazdiralim.
-
-
         //Her veri turuyle bir tane olmak uzere 4 degisken olusturun (float, double, char, boolean)
         //Degiskenler icin anlamli isimler kullanip, yazdiralim
 
     public static void main(String[] args) {
         //byte, short, integer,long, double, float veri tiplerinin max ve min degerlerini yazdiralim.
-
         byte byteMin = Byte.MIN_VALUE;
         System.out.println("byteMin = " + byteMin);
 
@@ -75,10 +70,7 @@ public class Q03_PrimitiveDataTypes {
         System.out.println("kilometre = " + kilometre);
         System.out.println("cinsiyet = " + cinsiyet);
         System.out.println("dogruMu = " + dogruMu);
-
-
     }
-
     }
 
 

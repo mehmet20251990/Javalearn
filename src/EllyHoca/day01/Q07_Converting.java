@@ -1,9 +1,7 @@
 package EllyHoca.day01;
 
 import java.util.Scanner;
-
 public class Q07_Converting {
-
      /*
         galonu litreye ceviren bir java programi yaziniz
             1 gallon = 3.785 litre
@@ -25,7 +23,4 @@ public class Q07_Converting {
         String result2 = litre + " litre degeri " + galon + " galona esittir";
          System.out.println("result2 = " + result2);
      }
-    
-    
-
 }

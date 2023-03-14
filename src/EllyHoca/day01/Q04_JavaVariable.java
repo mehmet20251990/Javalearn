@@ -1,7 +1,6 @@
 package EllyHoca.day01;
 
 public class Q04_JavaVariable {
-
     public static void main(String[] args) {
         // Initializing Variable  //variable baslangic degeri verme
         int age = 32;
@@ -20,7 +19,6 @@ public class Q04_JavaVariable {
         year =2032;
         System.out.println("year = " + year);
 
-
         //Bir degisken tanimlayin : x
         //Baska bir degiskeni initialize edin : y
         //x degiskenini initialize edin
@@ -30,9 +28,7 @@ public class Q04_JavaVariable {
         int y =20000;
         x=123;
         y=3000;
-
         System.out.println("x = " + x);
         System.out.println("y = " + y);
     }
-
 }
