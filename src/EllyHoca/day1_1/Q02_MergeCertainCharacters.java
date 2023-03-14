@@ -1,7 +1,6 @@
 package EllyHoca.day1_1;
 
 import java.util.Scanner;
-
 public class Q02_MergeCertainCharacters {
     /*
      * Kulanicidan alinan bir Stringin ilk ve son harfini yine kulanicidan alinan sayi kadar

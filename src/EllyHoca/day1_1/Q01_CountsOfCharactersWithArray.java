@@ -2,7 +2,6 @@ package EllyHoca.day1_1;
 
 import java.util.Arrays;
 import java.util.Scanner;
-
 public class Q01_CountsOfCharactersWithArray {
    /*
      Kullanicidan bir String aliniz.
@@ -14,7 +13,6 @@ public class Q01_CountsOfCharactersWithArray {
        Scanner sc = new Scanner(System.in);
        System.out.println("String gir");
        String str = sc.nextLine();
-
        //split
        String [] arr = str.split(""); //her bir karakteri ayirir
        System.out.println(Arrays.toString(arr));

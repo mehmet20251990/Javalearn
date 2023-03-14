@@ -1,7 +1,6 @@
 package EllyHoca.day1_1;
 
 import java.util.Scanner;
-
 public class Q05_CertainCharacterCount {
     /*
     * Kullanicidan bir cumle ve bir harf alin,
