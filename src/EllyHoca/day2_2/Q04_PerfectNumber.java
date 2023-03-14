@@ -1,7 +1,6 @@
 package EllyHoca.day2_2;
 
 import java.util.Scanner;
-
 public class Q04_PerfectNumber {
     /*
     Perfect Number (Mukemmel sayi)

@@ -1,7 +1,6 @@
 package EllyHoca.day2_2;
 
 import java.util.Scanner;
-
 public class Q02_ArmstrongNumber_4Digits {
     /*
  Armstrong sayi:herhangi bir sayinin rakamlarinin kupleri toplami o sayiyi veriyorsa sayi  Armstrong sayidir
@@ -9,7 +8,6 @@ public class Q02_ArmstrongNumber_4Digits {
      153 = 1*1*1 + 5*5*5 + 3*3*3 = 153
      370 = 3*3*3 + 7*7*7 + 0*0*0 = 370
      1634 = 1*1*1*1 + 6*6*6*6 + 3*3*3*3 + 4*4*4*4 = 1634
-
      5 basamakli : 54748
      */
     public static void main(String[] args) {

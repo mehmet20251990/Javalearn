@@ -2,7 +2,6 @@ package EllyHoca.day2_2;
 
 import java.util.Arrays;
 import java.util.Scanner;
-
 public class Q05_DifferenceBetweenArray_LargestAndSmallestElements {
     /*
     Create a function that takes an array and the difference between the largest

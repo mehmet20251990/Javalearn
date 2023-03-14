@@ -3,7 +3,6 @@ package EllyHoca.day2_2;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-
 public class Q03_FibonacciListNumber {
     /*
         Kullanıcıdan alınan bir tamsayıya kadar FIBONACCI dizisi oluşturun.
