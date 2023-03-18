@@ -1,7 +1,6 @@
 package EllyHoca.day02;
 
 import java.util.Scanner;
-
 public class Q05_IfStatement {
     	/*
         Print "Lutfen is unvaninizi girin
@@ -27,8 +26,6 @@ public class Q05_IfStatement {
                 System.out.println("is unvaniniz Business Analyst");
             } else if (jobTitle.equals("pm")) {
                 System.out.println("is unvaniniz Project Manager");
-
             }
         }
-
 }

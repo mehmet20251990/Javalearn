@@ -1,9 +1,7 @@
 package EllyHoca.day02;
 
 import java.util.Scanner;
-
 public class Q07_IfStatement {
-
    /*
 		Problem tanimi :
 		Kullanicidan  yasini ve kilosunu aliniz
@@ -11,7 +9,6 @@ public class Q07_IfStatement {
 		18 yasindann buyuk ve 50 kilo dan hafif ise kan bagisi yapamaz.
 		18 yasindan buyuk ve 50 ve 50 kilodan agir ise kan bagisi yapabilir.
 		 */
-
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.println("yasinizi giriniz :");
@@ -29,9 +26,5 @@ public class Q07_IfStatement {
                 System.out.println("kan bagisi yapabilirsiniz");
             }
         }
-
-
     }
-
-
     }

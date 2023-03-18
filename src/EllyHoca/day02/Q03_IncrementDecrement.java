@@ -1,10 +1,8 @@
 package EllyHoca.day02;
 
 public class Q03_IncrementDecrement {
-
     public static void main(String[] args) {
         System.out.println("-----Arttirma-----");
-
         int a = 1;
 
         System.out.println(++a); //2  value :2
@@ -12,7 +10,6 @@ public class Q03_IncrementDecrement {
         System.out.println(a); //3
 
         System.out.println("-----Azaltma----");
-
         int b = 5;
 
         System.out.println(--b); //4  value :4
@@ -32,12 +29,9 @@ public class Q03_IncrementDecrement {
         System.out.println("y = " + y); // y =13
 
         System.out.println("---soru2---");
-
         int k = 5;
 
         System.out.println(++k + k++ + k++ + --k + k-- + k); //6 + 6 +7 + 7 + 7 + 6-> 9
         System.out.println("k = " + k);  //6
     }
-
-
 }
