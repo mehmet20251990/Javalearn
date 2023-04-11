@@ -1,7 +1,6 @@
 package EllyHoca.day04;
 
 public class Q07_StringManipulation {
-
     /*
      * girilen String icinde "xyz" dizimi var ise true degilse false return eden metod yaziniz
      *
@@ -11,7 +10,6 @@ public class Q07_StringManipulation {
      * x.yz   ==   false
      * xyaz   ==   false
      */
-
     public static void main(String[] args) {
         String s = "xyaz";
         boolean xyzIceriyorMu = false;
@@ -23,10 +21,5 @@ public class Q07_StringManipulation {
             xyzIceriyorMu=false;
             System.out.println(xyzIceriyorMu);
         }
-
     }
-
-
-
-
 }

@@ -1,7 +1,6 @@
 package EllyHoca.day04;
 
 import java.util.Scanner;
-
 public class Q06_StringManipulation {
     /* String girildiginde ilk iki karakteri haric string return eden java programi yaziniz
         Ancak ilk karakter 'g' ve ikinci karakteri 'h' ise bu karakterler de return edilsin (gh  -  g  -  h   : 3 durum var)
@@ -25,6 +24,5 @@ public class Q06_StringManipulation {
             System.out.println(s.substring(1));
         }else
             System.out.println(s.substring(2));
-
     }
 }

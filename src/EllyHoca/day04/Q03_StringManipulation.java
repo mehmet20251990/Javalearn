@@ -1,7 +1,6 @@
 package EllyHoca.day04;
 
 public class Q03_StringManipulation {
-
     // String seklinde verlen asagidaki fiyatlarin toplamini bulunuz
     // String  str 1= "$13.99"
     // String str 2= "$10.55"
@@ -14,7 +13,6 @@ public class Q03_StringManipulation {
 		 	 \\W  ==> A->Z		a->z			0->9    _ disindaki hersey
 		 3) \\s   ==> space
 		 	 \\S   ==> space disindaki hersey  */
-
     public static void main(String[] args) {
         String str1= "$13.99";
         str1=str1.replaceAll("\\D", "");
@@ -25,7 +23,6 @@ public class Q03_StringManipulation {
         System.out.println(str2); //1055
 
         System.out.println(str1 + str2); //13991055
-
         // str1 ve str2 icerigi sayi olan String ifadelerdir
         // Eger iceriginin tamamen sayi oldugunu bildigimiz
         // String varsa parseDouble() veya parseInteger() methodu kullanbiliriz
@@ -36,8 +33,5 @@ public class Q03_StringManipulation {
 
         double toplam = (sayi1 + sayi2) /100; //virgullu sayi oldugu icin bolduk
         System.out.println( "$" +toplam);
-
-
     }
-
 }

@@ -1,9 +1,7 @@
 package EllyHoca.day04;
 
 import java.util.Scanner;
-
 public class Q01_StringManipulation {
-
     //Kullanicidan ismini ve soyisimi girmesini isteyin, sonrasinda konsola tam ismini buyuk harfler ile yazdirin
 
     public static void main(String[] args) {
@@ -14,5 +12,4 @@ public class Q01_StringManipulation {
         String fulName = firstName.concat(" " + lastName).toUpperCase();
         System.out.println("fulName = " + fulName);
     }
-
 }

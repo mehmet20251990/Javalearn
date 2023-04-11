@@ -1,10 +1,8 @@
 package EllyHoca.day04;
 
 import java.util.Scanner;
-
 public class Q02_StringManipulation {
     //Scanner kullanarak iki ayri deger giriniz ve bu iki kelimeyi method kullanarak birlestiriniz.
-
     //yukardaki ornekte verilen ilk ve ikinci degiskenlerinin ilk harflerini atip birlestiriniz.
 
     public static void main(String[] args) {
@@ -19,9 +17,6 @@ public class Q02_StringManipulation {
 
         String  str1Ilksiz = str1.substring(1);
         String  str2Ilksiz = str2.substring(1);
-
         System.out.println("ilk harfler olmadan birlesimi : " + str1Ilksiz + " " + str2Ilksiz);
-
     }
-
 }
