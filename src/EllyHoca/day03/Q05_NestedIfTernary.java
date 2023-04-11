@@ -7,10 +7,8 @@ public class Q05_NestedIfTernary {
       cikis "Gecersiz" olmalidir
       NestedIf ve Ternary kullanarak 2 yolla da cozunuz
     */
-
     public static void main(String[] args) {
         //Nested if ile
-
         int num = 5;
         String result = "";
         if (num >= 0 && num <= 9) {
@@ -38,16 +36,12 @@ public class Q05_NestedIfTernary {
 
 
         System.out.println("result = " + result);
-
-
         int n = 4;
-
         String result2 = n == 9 ? "nine" : n == 8 ? "eight" :
                 n == 7 ? "seven" : n == 6 ? "six" :
                         n == 5 ? "five" : n == 4 ? "four"
                                 : n == 3 ? "three" : n == 2 ? "two"
                                 : n == 1 ? "one" : n == 0 ? "zero" : "invalid";
-
         System.out.println("result2 = " + result2);
     }
 }

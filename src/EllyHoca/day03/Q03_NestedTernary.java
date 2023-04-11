@@ -1,7 +1,6 @@
 package EllyHoca.day03;
 
 public class Q03_NestedTernary {
-
     /*
     Final notu tanimlayin, Nested Ternary ile cozunuz
     'A'  ->  "Gayet Basarili"
@@ -17,5 +16,4 @@ public class Q03_NestedTernary {
                         finalNotu == 'C' ? "Ha gayret": "Digerleri";
         System.out.println("result = " + result);
     }
-
 }

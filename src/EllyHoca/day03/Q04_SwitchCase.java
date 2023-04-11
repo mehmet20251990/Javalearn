@@ -40,5 +40,4 @@ public class Q04_SwitchCase {
                 System.out.println("day off");
         }
     }
-
 }

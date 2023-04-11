@@ -1,10 +1,7 @@
 package EllyHoca.day03;
 
 import java.util.Scanner;
-
 public class Q07_SwitchCase {
-
-
     // Girilen uc haneli bir sayının okunusnu yazı ile yazdırınız.
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
@@ -12,8 +9,6 @@ public class Q07_SwitchCase {
         int sayi = scan.nextInt();
 
         int yuzlerBas =sayi/100, onlarBas =(sayi/10)%10, birlerBas =sayi%10;
-
-
         if(sayi>99 && sayi<1000){
             switch (yuzlerBas){
               //  case 0: System.out.println(""); break;
@@ -54,5 +49,4 @@ public class Q07_SwitchCase {
 
         }
     }
-
 }

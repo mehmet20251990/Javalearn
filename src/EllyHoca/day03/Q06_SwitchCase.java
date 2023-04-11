@@ -1,7 +1,6 @@
 package EllyHoca.day03;
 
 import java.util.Scanner;
-
 public class Q06_SwitchCase {
     /*
           * Kullanicidan ilk 3 buyuk harfden biri secildiginde cumle yazdiran kod yaziniz (switch case kullanin)

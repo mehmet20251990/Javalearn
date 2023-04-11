@@ -1,7 +1,6 @@
 package EllyHoca.day03;
 
 import java.util.Scanner;
-
 public class Q01_NestedIfStatement {
 /*
     Kullanici dan yas bilgisini alarak
@@ -26,7 +25,5 @@ public static void main(String[] args) {
             System.out.println("bir kez oy kullanabilirsiniz");
         }
     }else System.out.println("oy kullanabilmek icin 18 yas ve ustu olmaniz gerekir");
-
 }
-
 }
