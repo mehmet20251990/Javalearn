@@ -1,12 +1,10 @@
 package EllyHoca.day04;
 
 import java.util.Scanner;
-
 public class Q13_StringManipulation {
     // Kullanicidan 4 harfli bir kelime isteyin
     // ve girilen kelimeyi tersten yazdirin
     public static void main(String[] args) {
-
         Scanner scan = new Scanner(System.in); //mesaj vermeden de konsol da girdi girilir
         String kelime = scan.next();
         System.out.println(kelime.length());
@@ -17,11 +15,8 @@ public class Q13_StringManipulation {
             char uc = kelime.charAt(2);
             char dort = kelime.charAt(3);
             System.out.println("Tersden :" + dort + uc + iki + bir);
-
         } else {
             System.out.println("Girdiginiz kelime uzunlugu 4 karakterden fazla");
-
         }
     }
-
 }

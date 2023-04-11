@@ -1,7 +1,6 @@
 package EllyHoca.day04;
 
 import java.util.Scanner;
-
 public class Q09_StringManipulation {
     /*
       Kullanicidan bir kelime girmesini isteyin.
@@ -18,6 +17,5 @@ public class Q09_StringManipulation {
             System.out.println("ortanca karakter :" + ortancaKrk);
         }else
             System.out.println("tek sayida karakter iceren bir kelime giriniz...");
-
     }
 }
