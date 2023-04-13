@@ -1,7 +1,6 @@
 package EllyHoca.day06;
 
 public class Q01_ForLoop {
-
     /*
         100'den 0'a kadar 13'e tam bölünebilen sayıları ekrana yazdırınız (büyükten küçüğe).
         Ekran Çıktısı asagidaki sekilde olsun; ayrica sonrasinda bu sayilarin toplamini da yazdirin
@@ -15,7 +14,6 @@ public class Q01_ForLoop {
          13
          toplam =364
          */
-
     public static void main(String[] args) {
         System.out.println("istenen sonuc :");
         int toplam =0;
@@ -24,10 +22,7 @@ public class Q01_ForLoop {
                System.out.println(i);
                toplam +=i;
            }
-
         }
-
         System.out.println("toplam = " + toplam);
-
     }
 }
